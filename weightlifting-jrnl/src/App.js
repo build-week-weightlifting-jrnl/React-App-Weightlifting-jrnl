@@ -1,18 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import ReactDOM from "react-dom";
 import './App.css';
+import Login from "./Components/Login Page/index"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a>
-          Learn React
-        </a>
+        <div>This Is the Header</div>
+        <div><Login /></div>
+        <div>This Is the Footer</div>
       </header>
     </div>
   );
