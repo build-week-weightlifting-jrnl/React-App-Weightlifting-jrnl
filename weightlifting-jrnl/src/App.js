@@ -5,7 +5,7 @@ import Login from './Components/Login-Page';
 import Signup from './Components/Signup';
 const App = () => (
   <div className="main">
-    <Route path="/" component={Signup} />
+    <Route path="/" component={Login} />
   </div>
 );
 

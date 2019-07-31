@@ -117,9 +117,9 @@ export default class Signup extends React.Component {
               <FormGroup controlId="firstName">
                 <Label>First Name</Label>
                 <Input
-                  type="firstname"
-                  name="firstname"
-                  id="firstname"
+                  type="firstName"
+                  name="firstName"
+                  id="firstName"
                   placeholder="First Name"
                   value={this.state.firstName}
                   onChange={this.handleChange}
@@ -127,12 +127,12 @@ export default class Signup extends React.Component {
               </FormGroup>
             </Col>
             <Col>
-              <FormGroup controlId="firstName">
+              <FormGroup controlId="lastName">
                 <Label>Last Name</Label>
                 <Input
-                  type="lastname"
-                  name="lastname"
-                  id="lastname"
+                  type="lastName"
+                  name="lastName"
+                  id="lastName"
                   placeholder="Last Name"
                   value={this.state.lastName}
                   onChange={this.handleChange}
