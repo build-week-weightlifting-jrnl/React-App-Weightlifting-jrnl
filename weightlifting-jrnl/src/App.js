@@ -1,18 +1,12 @@
 import React from 'react';
-import ReactDOM from "react-dom";
+import { Route } from 'react-router-dom';
 import './App.css';
-import Login from "./Components/Login Page/index"
+import Login from './Components/Login-Page';
+import Signup from './Components/Signup';
+const App = () => (
+  <div className="main">
+    <Route path="/" component={Signup} />
+  </div>
+);
 
-function App() {
-  return (
-    <div>
-      <header className="App-header">
-        <div>This Is the Header</div>
-        <div><Login /></div>
-        <div>This Is the Footer</div>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export default App
