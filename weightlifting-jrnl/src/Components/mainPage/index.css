@@ -1,4 +1,11 @@
-div {
+.mainContent {
     font-family: 'Permanent Marker', cursive;
     color: #FFCC00;
+    text-align: center;
+}
+.journals {
+    color: #FFCC00;
+    text-align: center;
+    font-size: 50px;
+    border: 2px solid rebeccapurple;
 }

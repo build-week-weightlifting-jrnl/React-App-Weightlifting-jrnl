@@ -83,7 +83,6 @@ export default class Signup extends React.Component {
   render() {
     return (
       <div>
-        <Header />
         <Container className="App">
           <h2>Sign Up</h2>
           <Form className="form" onSubmit={this.handleSubmit}>
@@ -160,7 +159,6 @@ export default class Signup extends React.Component {
             </Button>
           </Form>
         </Container>
-        <Footer />
       </div>
     );
   }
