@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import axios from "axios";
 import {
   Container,
@@ -12,8 +12,6 @@ import {
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/footer";
 import { Link } from 'react-router-dom';
 
 export default class Login extends React.Component {
@@ -22,7 +20,8 @@ export default class Login extends React.Component {
 
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      token: ""
     };
   }
 

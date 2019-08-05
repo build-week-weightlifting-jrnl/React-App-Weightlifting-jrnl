@@ -15,8 +15,8 @@ const Header = () =>
                 <a href="index.html">Home</a>
                 <a href="aboutUs.html">About Us</a>
                 <a href="contact.html">Contact</a>
-                <a><Link to={'/login'}>Login</Link></a>
-                <a><Link to={'/signup'}>Sign Up</Link></a>
+                <div><Link to={'/login'}>Login</Link></div>
+                <div><Link to={'/signup'}>Sign Up</Link></div>
             </nav>
         </div>
     </header>;

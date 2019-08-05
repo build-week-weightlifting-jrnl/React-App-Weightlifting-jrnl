@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import axios from "axios";
 import {
   Container,
@@ -12,8 +12,6 @@ import {
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/footer";
 
 export default class Signup extends React.Component {
   constructor(props) {
