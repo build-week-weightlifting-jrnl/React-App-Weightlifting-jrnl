@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import axios from "axios";
 import {
   Container,
@@ -12,8 +12,7 @@ import {
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/footer";
+import { Link } from 'react-router-dom';
 
 export default class Login extends React.Component {
   constructor(props) {
@@ -21,7 +20,8 @@ export default class Login extends React.Component {
 
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      token: ""
     };
   }
 
@@ -77,7 +77,6 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <Header />
         <Container className="App">
           <h2>Sign In</h2>
           <Form className="form" onSubmit={this.handleSubmit}>
@@ -107,15 +106,9 @@ export default class Login extends React.Component {
                 />
               </FormGroup>
             </Col>
-            <Button
-              onClick={this.login}
-              /* disabled={!this.validateForm()} */ type="submit"
-            >
-              Login
-            </Button>
+            <Button onClick={this.login} type="submit"><Link to={'/mainPage'}>Login</Link></Button>
           </Form>
         </Container>
-        <Footer />
       </div>
     );
   }
